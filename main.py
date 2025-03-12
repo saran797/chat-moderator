@@ -8,7 +8,7 @@ from transformers import BertTokenizer
 app = FastAPI()
 
 # Load your trained model (joblib) and other necessary files
-model = joblib.load('rf_model.pkl')
+model = joblib.load('rf_model_bilstm.pkl')
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 class Message(BaseModel):
